@@ -1,0 +1,32 @@
+# Social Caption Generator — Cursor Rules
+
+You are working on **Social Caption Generator**, a Next.js 16 app that turns
+product descriptions into platform-native social media captions (Instagram,
+TikTok, Pinterest, X/Twitter) using AI.
+
+## Tech Stack
+- Next.js 16.2.1 (App Router) | React 19 | TypeScript 5
+- Tailwind CSS 4 | OpenAI SDK 6 (Groq/Ollama/OpenRouter compatible)
+- Streaming NDJSON API responses
+
+## Architecture
+- `app/page.tsx` — Main client component (form + streaming results)
+- `app/api/generate/route.ts` — LLM orchestration (1 brief + 4 parallel captions)
+- `app/api/ping/route.ts` — API key validation
+- `components/PlatformCard.tsx` — Platform result cards with char counters
+- `components/ApiKeyHeader.tsx` — API key management (localStorage)
+- `lib/llm.ts` — LLM client factory (multi-provider)
+- `lib/types.ts` — Shared TypeScript types
+
+## IMPORTANT: Check Your Inbox
+Before starting any work, read `CURSOR_INBOX.md` in the project root.
+It contains prioritized task assignments from the project lead, delegated
+via Claude Code. Follow the instructions in the highest-priority uncompleted
+task. Mark tasks as `[x]` when done and add a brief completion note.
+
+## Code Conventions
+- Use the OpenAI SDK pattern from `lib/llm.ts` for all LLM calls
+- Stream responses as NDJSON (see `app/api/generate/route.ts`)
+- Keep components in `components/`, utilities in `lib/`
+- Follow existing Tailwind styling patterns (dark mode support required)
+- Read `node_modules/next/dist/docs/` before using any Next.js API

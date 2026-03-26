@@ -1,0 +1,20 @@
+---
+description: Project delegation inbox — always check before starting work
+globs: ["**/*"]
+alwaysApply: true
+---
+
+# Delegation Protocol
+
+This project uses a delegation workflow between Claude Code and Cursor.
+
+## Before You Start
+1. Read `CURSOR_INBOX.md` for pending task assignments
+2. Work on the highest-priority uncompleted task first
+3. Follow the acceptance criteria listed in each task
+4. When done, mark the task checkbox `[x]` and add a completion note under it
+
+## After You Finish
+- Commit your changes with a clear message referencing the task ID
+- If a task has a "Report Back" section, leave your findings as a note in `CURSOR_INBOX.md`
+- Move to the next uncompleted task, or wait for new assignments
