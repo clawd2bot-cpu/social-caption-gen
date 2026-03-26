@@ -24,7 +24,7 @@ Enter your product name, description, and target audience once. Get all four cap
 
 Each caption is platform-native — not the same text reformatted, but actually written for the format, character limits, and audience behavior of each platform.
 
-**Live demo:** [social-caption-gen.vercel.app](#) *(link added after deploy)*
+**Live demo:** [app-001-social-caption-gen.vercel.app](https://app-001-social-caption-gen.vercel.app)
 
 ---
 
